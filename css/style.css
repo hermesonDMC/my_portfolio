@@ -50,6 +50,9 @@ p, a, li, button, ul {
   line-height: normal;
   text-decoration: none;
 }
+p {
+  color: #8A94A7;
+}
 
 a:hover {
   text-decoration: none;
@@ -93,21 +96,41 @@ button {
   height: 100vh;
   width: 100%;
   margin-top: -30px;
-  background: #151515;
+  background: #1d1e26;
   border-radius: 30px 30px 0 0;
   text-align: center;
 }
 
-
-#p-description-home {
-  color: #8A94A7;
+.slide-content {
+  padding: 45px 0px;
+  margin: 0 40px;
+  overflow: hidden;
 }
+
+.swiper{
+  width: 750px;
+}
+.swiper-navBtn {
+  color: #0270D7;
+  transition: color 0.4s ease;
+}
+.swiper-navBtn:hover {
+  color: #00BFFB;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 40px;
+}
+.swiper-pagination-bullet{
+  background-color: #00BFFB;
+}
+
 .skill-cards .card {
   place-items: center;
   overflow: hidden;
   position: relative;
-  width: 255px;
-  height: 355px;
+  width: 200px;
+  height: 300px;
   border-radius: 1em;
   background: linear-gradient(50deg, #2c4635, #243b5e);
 }
@@ -116,25 +139,24 @@ button {
   content: "";
   position: absolute;
   width: 450px;
-  height: 35px;
+  height: 25px;
   top: 0;
   right: 35px;
-  transition: 1.9s;
+  transition: 2.0s;
   background: linear-gradient(50deg, #00ff59, #02b3ff);
   transform: rotate(-45deg) translate(0, -100px);
 } 
 
 .skill-cards .card .content-card {
-  width: 247px;
-  height: 347px;
-  background: #171614;
+  width: 197px;
+  height: 292px;
+  background: #15181D;
   border-radius: .8em;
   z-index: 1;
   color: #858585;
   overflow: hidden;
-  padding: 1em;
   text-align: center;
-  /* cursor: pointer; */
+  cursor: pointer;
   transition: .5s ease;
 }
 
@@ -149,4 +171,20 @@ button {
   100% {
     transform: rotate(-45deg) translate(0, 450px);
   }
+}
+
+.card-logo {
+  padding: 15px;
+  margin: 0;
+  /* background: linear-gradient(0deg, rgba(29,32,38,1) 15%, rgb(147, 56, 34) 88%, rgba(228, 77, 38,1) 100%) fixed !important; */
+  background-color: rgb(157, 157, 157);
+  border-bottom: #243b5e solid 0.4px;
+  /* -webkit-box-shadow: 0px 5px 30px 0px rgba(0,118,168,1);
+  -moz-box-shadow: 0px 5px 30px 0px rgba(0,118,168,1);
+  box-shadow: 0px 5px 30px 0px rgba(0,118,168,1); */
+  /* background-color: red; */
+}
+.card-body {
+  margin: 0;
+  padding: 0;
 }
