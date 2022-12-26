@@ -132,7 +132,7 @@ button {
   width: 200px;
   height: 300px;
   border-radius: 1em;
-  background: linear-gradient(50deg, #2c4635, #243b5e);
+  background: linear-gradient(50deg, #243b5e, #2c4646);
 }
 
 .skill-cards .card::before {
@@ -143,7 +143,7 @@ button {
   top: 0;
   right: 35px;
   transition: 2.0s;
-  background: linear-gradient(50deg, #00ff59, #02b3ff);
+  background: linear-gradient(50deg, #02b3ff, #00ff59);
   transform: rotate(-45deg) translate(0, -100px);
 } 
 
@@ -176,8 +176,8 @@ button {
 .card-logo {
   padding: 15px;
   margin: 0;
-  /* background: linear-gradient(0deg, rgba(29,32,38,1) 15%, rgb(147, 56, 34) 88%, rgba(228, 77, 38,1) 100%) fixed !important; */
-  background-color: rgb(157, 157, 157);
+  background: linear-gradient(0deg, rgba(29,32,38,1) 15%, rgb(0, 79, 152) 88%, rgba(2,112,215,1) 100%) fixed !important;
+  /* background-color: rgb(157, 157, 157); */
   border-bottom: #243b5e solid 0.4px;
   /* -webkit-box-shadow: 0px 5px 30px 0px rgba(0,118,168,1);
   -moz-box-shadow: 0px 5px 30px 0px rgba(0,118,168,1);
@@ -187,4 +187,14 @@ button {
 .card-body {
   margin: 0;
   padding: 0;
+}
+
+#projects {
+  position: inherit;
+  height: 100vh;
+  width: 100%;
+  margin-top: -30px;
+  background: #1d1e26;
+  border-radius: 30px 30px 0 0;
+  text-align: center;
 }
