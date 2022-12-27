@@ -93,7 +93,7 @@ button {
 
 #skills {
   position: inherit;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   margin-top: -30px;
   background: #1d1e26;
@@ -190,11 +190,177 @@ button {
 }
 
 #projects {
+  padding-top: 20px;
   position: inherit;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  margin-top: -30px;
-  background: #1d1e26;
-  border-radius: 30px 30px 0 0;
+  background: black;
+  /* background: #1d1e26; */
   text-align: center;
 }
+/* .project h2 {
+	font-size: 45px;
+	font-weight: 700;
+  text-align: center;
+} */
+/* .project p {
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 56%;
+} */
+.project .nav.nav-pills {
+  width: 72%;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: rgb(255 255 255 / 10%);
+  overflow: hidden;
+}
+.project .nav.nav-pills .nav-item {
+  width: 33.33333%;
+}
+.project .nav.nav-pills .nav-link {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 17px 0;
+  color: #fff;
+  width: 100%;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  z-index: 0;
+}
+.project .nav.nav-pills .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90.21deg, rgba(2,112,215,1) -5.91%, rgba(0,191,251,1) 111.58%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+.project .nav.nav-pills .nav-link.active::before {
+  width: 100% !important;
+}
+.project .nav.nav-pills .nav-link.active {
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+.nav-link#projects-tabs-tab-first {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 55px 0px 0px 55px;
+}
+.nav-link#projects-tabs-tab-second {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.nav-link#projects-tabs-tab-third {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 55px 55px 0;
+}
+
+
+/* .card {
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(#333, #333);
+  transition: all .5s;
+}
+
+.card:hover {
+  background-image: linear-gradient(90.21deg, rgba(2,112,215,1) -5.91%, rgba(0,191,251,1) 111.58%);
+}
+
+.card .img {
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-image: url('./assets/Evelynn.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: all .5s;
+  z-index: 2;
+  position: relative;
+  opacity: .8;
+}
+
+.card .img span {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 100;
+  font-style: italic;
+  transition: all .5s;
+}
+
+.card:hover .img {
+  width: 430px;
+  opacity: 1;
+}
+
+.card:hover .img span {
+  font-size: 28px;
+}
+
+.card .content {
+  padding: 0px 20px;
+  height: 0;
+  opacity: 0;
+  transition: all .5s;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  transform: translateY(30px);
+}
+
+.card:hover .content {
+  height: 260px;
+  padding: 20px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card .content p {
+  margin: 0;
+}
+
+.card .content .title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card .content .desc {
+  font-size: 14px;
+  font-weight: 100;
+  opacity: .8;
+  margin-top: 8px;
+}
+
+.card .arrow {
+  padding: 15px;
+  transform: rotate(-180deg);
+  transition: all .5s;
+}
+
+.card:hover .arrow {
+  transform: rotate(0);
+}
+
+.card .arrow span {
+  font-size: 24px;
+} */
