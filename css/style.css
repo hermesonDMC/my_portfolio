@@ -133,6 +133,7 @@ button {
   height: 300px;
   border-radius: 1em;
   background: linear-gradient(50deg, #243b5e, #2c4646);
+  transition: all .3s ;
 }
 
 .skill-cards .card::before {
