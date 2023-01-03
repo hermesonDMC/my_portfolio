@@ -410,13 +410,16 @@ button {
   width: 100%;
   background: #151515;
 }
-
+/* .get-in-touch{ 
+  height: 100%;
+} */
 .contact-form {
   position: relative;
   /* width: 100%;
-  height: 100%; */
-  width: 380px;
+ */
+  /* height: 100%; */
   height: 420px;
+  width: 100%;
   background: #1c1c1c;
   border-radius: 8px;
   overflow: hidden;
@@ -426,8 +429,8 @@ button {
   position: absolute;
   top: -50%;
   left: -50%;
-  width: 380px;
-  height: 420px;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(0deg, transparent, #00BFFB, #00BFFB);
   transform-origin: bottom right;
   animation: animate-bx-form 6s linear infinite;
@@ -437,8 +440,8 @@ button {
   position: absolute;
   top: -50%;
   left: -50%;
-  width: 380px;
-  height: 420px;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(0deg, transparent, #00BFFB, #00BFFB);
   transform-origin: bottom right;
   animation: animate-bx-form 6s linear infinite;
@@ -460,20 +463,78 @@ button {
   z-index: 10;
 
   padding: 50px 40px;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 .form h2 {
   color: #00BFFB;
+  /* font-weight: 500; */
   text-align: center;
+  letter-spacing: 0.1em;
 }
-
+.input-bx {
+  position: relative;
+  /* width: 100%; */
+  margin-top: 35px;
+}
 .input-bx input {
   position: relative;
   width: 100%;
+  padding: 25px 0px 0px;
   background: transparent;
   border: none;
   outline: none;
   color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05;
+  z-index: 10;
 }
-
+.input-bx span {
+  position: absolute;
+  left: 0;
+  padding: 25px 0px 0px;
+  /* font-size: 1em; */
+  color: #8f8f8f;
+  pointer-events: none;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+.input-bx input:valid ~ span,
+.input-bx input:focus ~ span
+{
+  color: #00BFFB;
+  transform: translateY(-25px);
+  font-size: 0.75em;
+}
+.input-bx i{
+  position: absolute;
+  /* position: relative; */
+  left: 0;
+  bottom: 0;
+  width: 99%;
+  height: 2px;
+  background: #00BFFB;
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+.input-bx input:valid ~ i,
+/* .input-bx input[type="email"]:invalid ~ i, */
+.input-bx input:focus ~ i
+{
+  height: 44px;
+}
+input[type="submit"]
+{
+  border: none;
+  outline: none;
+  background: #00BFFB;
+  padding: 11px 25px;
+  width: 100px;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 4px;
+  /* font-weight: 600; */
+  cursor: pointer;
+}
