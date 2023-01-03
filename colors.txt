@@ -1,0 +1,14 @@
+Azul Claro
+#00BFFB
+
+Azul escruro
+#0270D7
+
+background dark forte		
+#15181D
+
+background dark fraca
+#1d2026
+
+Color text P
+#8A94A7
